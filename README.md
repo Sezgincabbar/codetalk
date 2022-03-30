@@ -1,10 +1,10 @@
 # Code Talks
 
-<img src="src/assets/screenshots/loging.png" height="500"><img src="src/assets/screenshots/sign.png" height="500">
+<img src="src/assets/screenshots/login.png" height="500"> <img src="src/assets/screenshots/sign.png" height="500">
 
-<img src="src/assets/screenshots/oda.png" height="500"><img src="src/assets/screenshots/oda2.png" height="500">
+<img src="src/assets/screenshots/oda.png" height="500"> <img src="src/assets/screenshots/oda2.png" height="500">
 
-<img src="src/assets/screenshots/mesaj.png" height="500"><img src="src/assets/screenshots/mesaj2.png" height="500">
+<img src="src/assets/screenshots/mesaj.png" height="500"> <img src="src/assets/screenshots/mesaj2.png" height="500">
 
 <img src="src/assets/screenshots/modal.png" height="500">
 
