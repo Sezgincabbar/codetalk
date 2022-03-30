@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85044991981",
+    "project_id": "codetalk-patika",
+    "storage_bucket": "codetalk-patika.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85044991981:android:5cf64f3a50c28829fbf9e4",
+        "android_client_info": {
+          "package_name": "com.codetalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85044991981-4j79ucvflqcauruoapgr4v3e1nfhkjts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0hY_Zw-kHzPPSisDgafFzO3kj0nX-AZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85044991981-4j79ucvflqcauruoapgr4v3e1nfhkjts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
