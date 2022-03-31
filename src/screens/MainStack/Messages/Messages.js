@@ -1,4 +1,4 @@
-import {SafeAreaView, FlatList, View, Text} from 'react-native';
+import {SafeAreaView, FlatList, View, Text, Alert} from 'react-native';
 import React from 'react';
 import FloatingButton from '../../../components/FloatingButton';
 import InputModal from '../../../components/InputModal';
@@ -33,25 +33,31 @@ const MessagesScreen = ({route}) => {
     sendContent(message);
   }
 
-  function handleDeleteContent(message_id) {
-    database().ref(`rooms/${roomId}/messages/${message_id}`).remove();
+  function handleDeleteContent(item) {
+    const kullanici = auth().currentUser.uid;
+
+    if (kullanici === item.uid) {
+      database().ref(`rooms/${roomId}/messages/${item.id}`).remove();
+    } else {
+      Alert.alert('Dikkat', 'Bu mesajı silme yetkinizyok');
+    }
   }
+
   function sendContent(message) {
     const userMail = auth().currentUser.email;
+    const uid = auth().currentUser.uid;
     const messageObject = {
       message,
       username: userMail.split('@')[0],
       date: new Date().toISOString(),
+      uid,
     };
 
     database().ref(`rooms/${roomId}/messages`).push(messageObject);
   }
 
   const renderRooms = ({item}) => (
-    <MessageCard
-      message={item}
-      onLongPress={() => handleDeleteContent(item.id)}
-    />
+    <MessageCard message={item} onLongPress={() => handleDeleteContent(item)} />
   );
 
   const keyExtractMessages = item => item.id;
